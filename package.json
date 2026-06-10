@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node server.js",
     "preview:cloudflare": "wrangler dev",
     "predeploy:cloudflare": "npm install -g wrangler",
-    "deploy:cloudflare": "npx wrangler deploy",
+    "deploy:cloudflare": "wrangler deploy --env-production-vars CLOUDFLARE_API_TOKEN,CLOUDFLARE_ACCOUNT_ID",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && pnpm format",
     "lint:strict": "eslint --max-warnings=0 src",
