@@ -116,6 +116,7 @@
     "typescript": "^4.9.5",
     "vercel": "^50.4.10",
     "webpack-obfuscator": "^3.5.1"
+    "@cloudflare/wrangler": "3.50.0"
   },
   "packageManager": "pnpm@10.14.0"
 }
