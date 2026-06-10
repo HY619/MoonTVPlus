@@ -8,8 +8,7 @@
     "build:cloudflare": "BUILD_TARGET=cloudflare pnpm gen:manifest && npx @opennextjs/cloudflare build",
     "start": "NODE_ENV=production node server.js",
     "preview:cloudflare": "wrangler dev",
-    "predeploy:cloudflare": "npm install -g wrangler",
-    "deploy:cloudflare": "wrangler deploy --env-production-vars CLOUDFLARE_API_TOKEN,CLOUDFLARE_ACCOUNT_ID",
+    "deploy:cloudflare": "wrangler deploy",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && pnpm format",
     "lint:strict": "eslint --max-warnings=0 src",
@@ -116,8 +115,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^4.9.5",
     "vercel": "^50.4.10",
-    "webpack-obfuscator": "^3.5.1",
-    "@cloudflare/wrangler": "3.50.0"
+    "webpack-obfuscator": "^3.5.1"
   },
   "packageManager": "pnpm@10.14.0"
 }
